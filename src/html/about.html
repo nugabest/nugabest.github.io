@@ -1,11 +1,22 @@
 <section>
-    <span class="image">
-        <img src="assets/images/@@img" alt="" data-position="center center"/>
-    </span>
+
+    @@if (video != '') {
+         <iframe class="image" src="@@video"></iframe>
+    }
+
+    @@if (img != '') {
+        <span class="image">
+            <img src="assets/images/@@img" alt="" data-position="center center"/>
+        </span>
+    }
+
     <div class="content">
         <div class="inner">
-            <h2>@@title</h2>
+            @@if (title != '') {
+                <h2>@@title</h2>
+            }
             <p>@@text</p>
         </div>
     </div>
+
 </section>
