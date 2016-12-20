@@ -3,11 +3,9 @@
   "version": "0.0.1",
   "description": "nuga best spb github home",
   "author": "",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-task-builder": "git+https://github.com/strangerintheq/gulp-task-builder.git#1.0.5"
+    "gulp-file-include": "^1.0.0"
   }
 }

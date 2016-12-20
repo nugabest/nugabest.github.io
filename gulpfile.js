@@ -1,8 +1,8 @@
+var fileInclude = require('gulp-file-include');
+var gulp = require('gulp');
 
-var Task = require('gulp-task-builder');
-
-new Task('default')
-    .src('./src/html/index.html')
-    .fileinclude()
-    .dest('.');
-
+gulp.task('default', function() {
+    gulp.src(['./src/html/index.html'])
+        .pipe(fileInclude())
+        .pipe(gulp.dest('.'));
+});
