@@ -170,7 +170,7 @@
 				// Assign image.
 				var src = $img.attr('src');
 				if (src) {
-					$image.css('background-image', 'url(' +  + ')');
+					$image.css('background-image', 'url(' + src + ')');
 
 					// Set background position.
 					if (x = $img.data('position'))
