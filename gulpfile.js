@@ -1,8 +1,15 @@
-var fileInclude = require('gulp-file-include');
+var include = require('gulp-file-include');
 var gulp = require('gulp');
+var sass = require('gulp-sass');
 
-gulp.task('default', function() {
+gulp.task('sass', function () {
+    gulp.src('./src/sass/main.scss')
+        .pipe(sass.sync().on('error', sass.logError))
+        .pipe(gulp.dest('.'));
+});
+
+gulp.task('default', ['sass'], function() {
     gulp.src(['./src/html/index.html'])
-        .pipe(fileInclude())
+        .pipe(include())
         .pipe(gulp.dest('.'));
 });
