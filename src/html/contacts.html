@@ -1,17 +1,17 @@
-<ul class="contact">
-    <li>
-        <span>@@who</span>
-    </li>
-    <li>
-        <h3>Адрес</h3>
-        <span>@@address</span>
-    </li>
-    <li>
-        <h3>Телефон</h3>
-        <span>@@phone</span>
-    </li>
-    <li>
-        <h3>E-Mail</h3>
-        <span>@@email</span>
-    </li>
-</ul>
+@@include('blocks/header.html')
+
+<section id="contacts" class="wrapper style1">
+    <div class="inner">
+        <h2>Контакты</h2>
+        <div class="split style1">
+            <section>
+                @@include('blocks/map.html')
+            </section>
+            <section>
+                @@loop("blocks/company.html", "../data/company.json")
+            </section>
+        </div>
+    </div>
+</section>
+
+@@include('blocks/footer.html')

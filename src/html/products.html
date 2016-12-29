@@ -1,7 +1,15 @@
-<div class="inner">
-    <h2>Продукция Нуга Бест</h2>
-    <p>@@include('../data/promo.txt')</p>
-    <div class="features">
-        @@loop("item.html", "../data/items.json")
+@@include('blocks/header.html')
+
+<section id="products" class="wrapper style3">
+    <div class="inner">
+        <h2>Продукция Нуга Бест</h2>
+        <p>Протестировать <b>продукцию Нуга Бест</b>, получить консультации специалиста
+            вы можете в наших демонстрационных залах. Пройти сеансы на оборудовании
+            можно <b>абсолютно бесплатно</b> в удобное для Вас время и неограниченное количество раз.</p>
+        <div class="features">
+            @@loop("blocks/item.html", "../data/items.json")
+        </div>
     </div>
-</div>
+</section>
+
+@@include('blocks/footer.html')

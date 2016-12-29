@@ -1,53 +1,20 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    @@include('head.html')
-</head>
-<body>
+@@include('blocks/header.html')
 
-<section id="sidebar">
-    @@include('menu.html')
+<section id="intro" class="wrapper style1 fullscreen">
+    @@loop("blocks/intro.html", "../data/company.json")
 </section>
 
-<div id="wrapper">
-    <section id="intro" class="wrapper style1 fullscreen fade-up">
-        @@loop("intro.html", "../data/company.json")
-    </section>
+<section id="about" class="wrapper style2 spotlights">
+    @@loop("blocks/about.html", "../data/about.json")
+</section>
 
-    <section id="about" class="wrapper style2 spotlights">
-        @@loop("about.html", "../data/about.json")
-    </section>
-
-    <section id="products" class="wrapper style3 fade-up">
-        @@include('products.html')
-    </section>
-
-    <section id="certificates" class="wrapper style2 spotlights">
-        @@include('certificates.html')
-    </section>
-
-    <section id="contacts" class="wrapper style1 fade-up">
-        <div class="inner">
-            <h2>Контакты</h2>
-            <div class="split style1">
-                <section>
-                    @@include('map.html')
-                </section>
-                <section>
-                    @@loop("contacts.html", "../data/company.json")
-                </section>
-            </div>
-        </div>
-    </section>
-</div>
-
-<footer id="footer" class="wrapper style1-alt">
+<section id="whyus" class="wrapper style3">
     <div class="inner">
-        @@include('copy.html')
+        <h2>Наши приемущества</h2>
+        <div class="whyus">
+            @@loop("blocks/whyus.html", "../data/whyus.json")
+        </div>
     </div>
-</footer>
+</section>
 
-@@include('scripts.html')
-
-</body>
-</html>
+@@include('blocks/footer.html')

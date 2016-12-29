@@ -1,15 +1,12 @@
 <section>
-
     @@if (video != '') {
          <iframe class="image" src="@@video"></iframe>
     }
-
     @@if (img != '') {
         <span class="image">
             <img src="assets/images/@@img" alt="@@alt" data-position="center center"/>
         </span>
     }
-
     <div class="content">
         <div class="inner">
             @@if (title != '') {
@@ -18,5 +15,4 @@
             <p>@@text</p>
         </div>
     </div>
-
 </section>

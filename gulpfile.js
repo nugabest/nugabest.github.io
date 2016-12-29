@@ -9,7 +9,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('default', ['sass'], function() {
-    gulp.src(['./src/html/index.html'])
+    gulp.src(['./src/html/*.html'])
         .pipe(include())
         .pipe(gulp.dest('.'));
 });

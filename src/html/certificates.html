@@ -1,8 +1,14 @@
-<div class="inner">
-    <h2>Сертификаты</h2>
-    <div class="box alt">
-        <div class="row uniform">
-            @@loop("certificate.html", "../data/certificates.json")
+@@include('blocks/header.html')
+
+<section id="certificates" class="wrapper style2">
+    <div class="inner">
+        <h2>Сертификаты</h2>
+        <div class="box alt">
+            <div class="row uniform">
+                @@loop("blocks/certificate.html", "../data/certificates.json")
+            </div>
         </div>
     </div>
-</div>
+</section>
+
+@@include('blocks/footer.html')
