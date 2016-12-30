@@ -1,0 +1,21 @@
+[{
+  "url": "index.html#intro",
+  "icon": "fa-home",
+  "text": "Главная"
+}, {
+  "url": "index.html#about",
+  "icon": "fa-star-o",
+  "text": "О&nbsp;компании"
+}, {
+  "url": "products.html",
+  "icon": "fa-shopping-cart",
+  "text": "Продукция"
+}, {
+  "url": "certificates.html",
+  "icon": "fa-newspaper-o",
+  "text": "Сертификаты"
+}, {
+  "url": "contacts.html",
+  "icon": "fa-phone",
+  "text": "Контакты"
+}]
