@@ -1,12 +1,45 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    @@include('head.html')
+    <title>@@title</title>
+
+    <meta charset="utf-8"/>
+    <meta name="Keywords" content="@@keywords">
+    <meta name="Description" content="@@description">
+    <meta name="robots" content="ALL">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="yandex-verification" content="b55c04913c7019fd" />
+
+    <link rel="icon" href="assets/images/other/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/other/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="assets/fonts/akrobat/akrobat.css" />
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="assets/styles/ie9.css"/>
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <script src="assets/scripts/ie/html5shiv.js"></script>
+    <link rel="stylesheet" href="assets/styles/ie8.css"/>
+    <![endif]-->
+
 </head>
 <body>
 
 <section id="sidebar">
-    @@include('menu.html')
+    <div class="inner">
+        <span class="logo" style="background: url(assets/images/other/logo.png) no-repeat 0 0;"></span>
+        <nav>
+            <ul>
+                @@loop("menuitem.html", "../data/menu.json")
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        document.querySelector("#menuitem-@@id").classList.add('active');
+    </script>
 </section>
 
 <div id="wrapper">

@@ -1,20 +1,25 @@
 [{
-  "url": "index.html#intro",
+  "id": "index",
+  "url": "index.html",
   "icon": "fa-home",
   "text": "Главная"
 }, {
-  "url": "index.html#about",
+  "id": "about",
+  "url": "about.html",
   "icon": "fa-star-o",
   "text": "О&nbsp;компании"
 }, {
+  "id": "products",
   "url": "products.html",
   "icon": "fa-shopping-cart",
   "text": "Продукция"
 }, {
+  "id": "certificates",
   "url": "certificates.html",
   "icon": "fa-newspaper-o",
   "text": "Сертификаты"
 }, {
+  "id": "contacts",
   "url": "contacts.html",
   "icon": "fa-phone",
   "text": "Контакты"

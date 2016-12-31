@@ -1,16 +1,17 @@
-@@include('blocks/header.html')
+@@include('blocks/header.html', {
+    "id": "index",
+    "title": "Нуга Бест официальный дилер Санкт-Петербург (Nuga Best Spb)",
+    "keywords": "нуга бест, nuga best, нуга бест в Санкт-Петербурге, нуга бест салон, нуга бест адрес, нуга бест демонстрационный зал, кровать нуга бест, массажная кровать, nuga nm 5000, турманиевая керамика",
+    "description": "Надоели хронические болезни? Не спешите навстречу старости? Медицинское оборудование Нуга Бест для домашнего применения - Ваш путь к здоровью и долголетию!"
+})
 
 <section id="intro" class="wrapper style1 fullscreen">
     @@loop("blocks/intro.html", "../data/company.json")
 </section>
 
-<section id="about" class="wrapper style2 spotlights">
-    @@loop("blocks/about.html", "../data/about.json")
-</section>
-
 <section id="whyus" class="wrapper style3">
     <div class="inner">
-        <h2>Наши приемущества</h2>
+        <h1>Наши приемущества</h1>
         <div class="whyus">
             @@loop("blocks/whyus.html", "../data/whyus.json")
         </div>
@@ -21,9 +22,9 @@
     <div class="inner">
         <h2>Продажа за наличные, рассрочка, кредит</h2>
         <div>
-            <img style="width: 200px;" src="assets/images/banks/alfa.svg">
-            <img style="width: 200px;" src="assets/images/banks/otp.svg">
-            <img style="width: 200px;" src="assets/images/banks/homecredit.svg">
+            <img style="height: 70px;" src="assets/images/banks/alfa.svg">
+            <img style="height: 70px;" src="assets/images/banks/otp.svg">
+            <img style="height: 70px;" src="assets/images/banks/homecredit.svg">
         </div>
     </div>
 </section>

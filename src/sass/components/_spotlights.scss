@@ -72,21 +72,21 @@
 				background-color: rgba(0,0,0,0.1);
 			}
 
-			&.inactive,
-			body.is-loading & {
-				> .image {
-					&:before {
-						opacity: 1;
-					}
-				}
-
-				> .content {
-					> .inner {
-						@include vendor('transform', 'translateX(-1em)');
-						opacity: 0;
-					}
-				}
-			}
+			//&.inactive,
+			//body.is-loading & {
+			//	> .image {
+			//		&:before {
+			//			opacity: 1;
+			//		}
+			//	}
+            //
+			//	> .content {
+			//		> .inner {
+			//			@include vendor('transform', 'translateX(-1em)');
+			//			opacity: 0;
+			//		}
+			//	}
+			//}
 
 			@include breakpoint(xlarge) {
 				> .content {
@@ -106,14 +106,14 @@
 					width: 100%;
 				}
 
-				&.inactive,
-				body.is-loading & {
-					> .content {
-						> .inner {
-							@include vendor('transform', 'translateY(1em)');
-						}
-					}
-				}
+				//&.inactive,
+				//body.is-loading & {
+				//	> .content {
+				//		> .inner {
+				//			@include vendor('transform', 'translateY(1em)');
+				//		}
+				//	}
+				//}
 			}
 
 			@include breakpoint(small) {

@@ -1,8 +1,13 @@
-@@include('blocks/header.html')
+@@include('blocks/header.html', {
+    "id": "certificates",
+    "title": "Нуга Бест официальный дилер Санкт-Петербург (Nuga Best Spb)",
+    "keywords": "нуга бест, nuga best, нуга бест в Санкт-Петербурге, нуга бест салон, нуга бест адрес, нуга бест демонстрационный зал, кровать нуга бест, массажная кровать, nuga nm 5000, турманиевая керамика",
+    "description": "Надоели хронические болезни? Не спешите навстречу старости? Медицинское оборудование Нуга Бест для домашнего применения - Ваш путь к здоровью и долголетию!"
+})
 
 <section id="certificates" class="wrapper style2">
     <div class="inner">
-        <h2>Сертификаты</h2>
+        <h1>Сертификаты</h1>
         <div class="box alt">
             <div class="row uniform">
                 @@loop("blocks/certificate.html", "../data/certificates.json")

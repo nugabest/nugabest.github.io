@@ -104,6 +104,9 @@
 
 			&:hover {
 				color: _palette(fg);
+                &:after {
+                  max-width: 100%;
+                }
 			}
 
 			&.active {
