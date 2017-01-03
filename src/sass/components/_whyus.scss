@@ -11,21 +11,21 @@
 		@include padding(2em, 2em);
 		width: 100%;
 
-		position: relative;
-
 		&:nth-last-child(1){
 			padding: 2em;
 		}
 
 		.icon {
-
+			min-width: 2em;
+			display: inline-block;
+			text-align: center;
 		}
 
 	}
 
 
 	@include breakpoint(medium) {
-		display: block;
+
 
 		section {
 			border-top-width: 1px !important;
@@ -40,20 +40,9 @@
 
 	@include breakpoint(small) {
 		section {
-			@include padding(2em, 1.5em);
-
+			@include padding(2em, 2em);
 			.icon {
-
-			}
-		}
-	}
-
-	@include breakpoint(xsmall) {
-		section {
-			@include padding(2em, 1.5em);
-
-			.icon {
-
+				min-width: 1em;
 			}
 		}
 	}
