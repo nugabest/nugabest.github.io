@@ -1,21 +1,16 @@
-///
-/// Hyperspace by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
 
-/* Wrapper */
 
 	.wrapper {
 		position: relative;
 
 		> .inner {
-			@include padding(5em, 5em);
+			@include padding(3em, 4em);
+
 			max-width: 100%;
 			width: _size(inner-width);
 
 			@include breakpoint(xlarge) {
-				@include padding(4em, 4em);
+				@include padding(3em, 4em);
 			}
 
 			@include breakpoint(large) {
@@ -23,7 +18,7 @@
 			}
 
 			@include breakpoint(small) {
-				@include padding(3em, 2em);
+				@include padding(4em, 2em);
 			}
 		}
 
