@@ -26,7 +26,14 @@
             zoom: 16
         });
 
-        var placemark = new ymaps.Placemark([lat, lon]);
+        var placemark = new ymaps.Placemark([lat, lon], {
+            balloonContent: 'Шлиссельбургский проспект, дом 17, корпус 1'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'assets/images/other/logo.svg',
+            iconImageSize: [40, 40],
+            iconImageOffset: [-20, -20]
+        });
         myMap.geoObjects.add(placemark);
         myMap.behaviors.disable('scrollZoom');
     }
