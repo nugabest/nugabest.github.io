@@ -4,11 +4,6 @@
   "icon": "fa-home",
   "text": "Главная"
 }, {
-  "id": "about",
-  "url": "about.html",
-  "icon": "fa-star-o",
-  "text": "О&nbsp;компании"
-}, {
   "id": "products",
   "url": "products.html",
   "icon": "fa-shopping-cart",
